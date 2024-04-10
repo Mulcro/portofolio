@@ -1,0 +1,108 @@
+/* Navbar */
+.navbar{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  .navbarTitle{
+    display: flex;
+    flex-direction: row;
+  }
+  .navBackground{
+    position: relative;
+    left: -40%;
+    max-height: 80px;
+    max-width: 400px;
+  }
+  
+  .mobileNavToggle{
+    display: none;
+  }
+  .navbarContent{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbarSections ul{
+    padding-left: 0;
+    margin: 5px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1rem;
+  } 
+  
+  .navbarSections ul li{
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 200ms ease-in-out;
+  }
+  
+  .navbarSections ul li:hover{
+    /* background-color: rgba(207, 207, 207, 0.1); */
+    border-bottom: red 2px solid;
+    border-radius: 0%;
+    color: red;
+  }
+  
+  @media (max-width:45em) {
+    .navbarTitle{
+      margin-inline: clamp(0.5rem, 5vw, 1rem);
+    }
+    .navbarSections ul{
+      gap: 2rem;
+      position: fixed;
+      z-index: 1000;
+      background: rgba(70, 70, 70, 0.1); 
+  
+  
+      inset: 0 0 0 40%;
+      flex-direction: column;
+      justify-content: start;
+      padding: min(20vh, 10rem) 2rem; 
+      /* backdrop-filter: blur(1rem) ; */
+      /* border-left: #6c0000 3px solid; */
+  
+      transform: translateX(100%);
+      transition: transform 400ms ease-in-out;        
+    }
+  
+    .navbarSections ul[data-visible="true"]{
+      transform: translateX(0%);
+    }
+  
+    .mobileNavToggle{
+      display: block;
+      position: fixed;
+      top: 5vh;
+      right: 5vh;
+      z-index: 9999;
+    }
+  }
+  
+  @media (min-width:45em) and (max-width: 80em) {
+    .navbarTitle{
+      margin-inline-start: clamp(0.5rem, 5vw, 1rem);
+    }
+    .navbarSections ul{
+      gap: .8rem;
+      padding-block: 1rem;
+      padding-inline: clamp(1rem, 10vw, 1.5rem);
+    }
+  }
+  
+  @media (min-width: 80em) {
+    .navbarTitle{
+      margin-inline-start: clamp(1rem, 5vw, 2.5rem);
+    }
+    .navbarSections ul{
+      gap: 2rem;
+      padding-block: 1.5rem;
+      padding-inline: clamp(1rem, 10vw, 5rem);
+    }
+  }
