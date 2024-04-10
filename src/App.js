@@ -30,10 +30,9 @@ function App() {
         <Experience/>
         <Tech/>
         <Works/>
-        <Feedbacks/>
         <div className='relative z-0'>
           <Contact/>
-          <StarsCanvas/>
+          <StarsCanvas numStars={4000}/>
         </div>
       </div>
     </BrowserRouter>

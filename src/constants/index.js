@@ -19,10 +19,21 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  leaf,
+  lib,
+  locafarm,
+  science,
+  bear,
   threejs,
+  github,
+  linkedin,
+  gmail,
+  instagram,
+  postgres,
+  python,
+  heroku,
+  merced,
+  snc
 } from "../assets";
 
 export const navLinks = [
@@ -42,21 +53,17 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Backend Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Machine Learning",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  }
 ];
 
 const technologies = [
@@ -73,16 +80,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -91,6 +90,10 @@ const technologies = [
   {
     name: "Node JS",
     icon: nodejs,
+  },
+  {
+    name: "Postgres",
+    icon: postgres,
   },
   {
     name: "MongoDB",
@@ -105,66 +108,60 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "heroku",
+    icon: heroku,
   },
   {
-    name: "docker",
-    icon: docker,
-  },
+    name:"Python",
+    icon: python
+  }
+
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Sales Associate",
+    company_name: "Spheres Numerique et Commerciales",
+    icon: snc,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "May 2018 - Dec 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "In charge of engaging in customer welcoming and greeting., registering customers purchases and catering to their needs as well as troubleshooting any problems customers had with their devices.",
+      "Left a net positive impact by building good relationships with customers encouraging them to continue to patronize the company which increased sales turnover."
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Vice President of Computer Science Club",
+    company_name: "Merced College",
+    icon: merced,
+    iconBg: "#E6DEDD",
+    date: "Feb 2023 - May 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "In charge of planning and organizing computer science related workshops for club members as well as delegating tasks and meetings for club officials.",
+      "Coordinated and Designed 2023 Merced College science fair and contributed to the development of the science fair website.",
+      "Engaged in weekly meetings to plan fundraisers, from which funds were used towards STEM relevant escursions and activities for group members",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Undergraduate Student Tutor",
+    company_name: "Merced College",
+    icon: merced,
+    iconBg: "#E6DEDD",
+    date: "Aug 2023 - Present",
+    points: [
+      "Provide tutoring sessions at the Merced College Student Success and Tutorial center on various subjects including Calculus 1 and 2, Computer Science, English, and French.",
+      "Responsible for being a model student in my classes and being a representative of the Merced College Student Success and Tutorial center, encouraging students to partake in our services.",
+    ],
+  },
+  {
+    title: "Embedded-Tutor",
+    company_name: "Merced College",
+    icon: merced,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Fulfill the role of a dedicated ambassador for the Library tutoring program as an Embedded Tutor in a Calculus 1 classroom, promoting and facilitating seamless integration between classroom learning and the available tutoring services.",
+      "Provide assistance to students in and outside of class regarding class material",
     ],
   },
 ];
@@ -198,68 +195,173 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Locafarm",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Inspired by reshaping the agriculture-consumer relationship, LocaFarm aims to bridge the gap between local farmers and health-conscious consumers, fostering a community-driven marketplace. LocaFarm utilizes extensive datasets and machine learning primarily to improve farmers' yields, predicting optimal crops based on a random forrest tree classification model that's dependent on environmental factors, thereby empowering farmers and enhancing agricultural productivity.",
     tags: [
       {
-        name: "react",
+        name: "React JS",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Flask",
+        color: "text-red",
+      },
+      {
+        name: "pandas",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "numpy",
+        color: "red-text-gradient",
+      },
+      {
+        name: "scikit-learn",
+        color: "brown-text-gradient",
+      },
+      {
+        name: "Postgres",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: locafarm,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Science Fair",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "The 2023 Merced College Science Fair website is designed and implemented using ReactJS, showcasing the various projects and participants of the science fair. The website also features an admin panel for managing projects, participants, and judges, enabling the organizers to efficiently manage the event.",
     tags: [
       {
-        name: "react",
+        name: "React JS",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: science,
+    source_code_link: "https://mercedsciencefair-2023.vercel.app/"
   },
   {
-    name: "Trip Guide",
+    name: "LeafBuster AI",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Leaf Buster AI utilizes TheosAPI to train an image recognition model for identifying apple leaf rot and blot using a Kaggle dataset. Additionally, Leaf Buster AI designs and implements a ReactJS frontend enabling users to upload apple leaf images, which are processed by Theos API, and presents the results in a user-friendly format.",
     tags: [
       {
-        name: "nextjs",
+        name: "React JS",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "TheosAPI",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: leaf,
+    source_code_link: "https://mulcro.github.io/LeafBuster-AI/",
   },
+  {
+    name: "LibKnekt",
+    description:
+      "Libknekt designs and implements a relational model for a MongoDB database using Mongoose in an ExpressJS backend, enabling CRUD operations on books, authors, categories, and users. Additionally, Libknekt builds an ExpressJS API with custom user authentication, facilitating a privilege-based experience on the ReactJS frontend, where users can search, borrow books, and browse by title, author, and category.",
+    tags: [
+      {
+        name: "React JS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ExpressJS",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: lib,
+    source_code_link: "https://libknekt-2b0c1dd1621b.herokuapp.com/",
+  },
+  {
+    name: "Bear Creek Watcher",
+    description:
+      "In an attempt to forecast future precipitation, Numpy and Scikit-learn Python libraries were utilized to generate regression models from past precipitation data, with predictions stored in a local CSV file. Data was then parsed and presented in a user-friendly format using ExpressJS to create a custom API, enabling data transmission to the frontend via API calls. The frontend, developed using ReactJS, displays precipitation data and flood risk for any day over the next 60 years.",
+    tags: [
+      {
+        name: "React JS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJS",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "pandas",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "numpy",
+        color: "red-text-gradient",
+      },
+      {
+        name: "scikit-learn",
+        color: "brown-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: bear,
+    source_code_link: "",
+  }
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const contacts = [
+  {
+    title: "Email",
+    icon: gmail,
+    value: "mulero.alamou@gmail.com",
+    isEmail: true,
+    color: '#0BCD2E'
+  },
+  {
+    title: "LinkedIn",
+    icon: linkedin,
+    value: "https://www.linkedin.com/in/mulero-alamou/",
+    isEmail: false,
+    color: '#fff'
+  },
+  {
+    title: "GitHub",
+    icon: github,
+    value: "https://github.com/Mulcro",
+    isEmail: false,
+    color: '#0E58E2'
+  },
+  {
+    title: "Instagram",
+    icon: instagram,
+    value: "https://www.instagram.com/mulerro/",
+    isEmail: false,
+    color: '#931ACC'
+  }
+]
+
+export {contacts, services, technologies, experiences, testimonials, projects };

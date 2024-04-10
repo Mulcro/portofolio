@@ -26,11 +26,24 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import leaf from "./leaf.png";
+import lib from "./lib.png";
+import locafarm from "./locafarm.png";
+import science from "./science.png";
+import bear from "./bear.png";
+
+import postgres from "./tech/postgres.png";
+import python from "./tech/python.png";
+import linkedin from "./tech/linkedin.png";
+import gmail from "./tech/gmail.png";
+import heroku from "./tech/heroku.png";
+import instagram from "./tech/instagram.png";
+import merced from "./tech/merced.png";
+import snc from "./tech/snc.png"
 
 export {
+  snc,
+  merced,
   logo,
   backend,
   creator,
@@ -56,7 +69,15 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  leaf,
+  lib,
+  locafarm,
+  science,
+  bear,
+  postgres,
+  python,
+  linkedin,
+  gmail,
+  heroku,
+  instagram
 };

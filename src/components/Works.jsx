@@ -1,9 +1,83 @@
 import React from 'react'
+import {motion} from 'framer-motion'
+import {styles} from '../style'
+import SectionWrapper from './hoc/SectionWrapper'
+import {github} from '../assets'
+import {fadeIn, textVariant} from '../utils/motion'
+import {projects} from '../constants'
+import Tilt from 'react-parallax-tilt'
 
+const ProjectCard = ({project,index}) => {
+  return (
+    <motion.div variants={fadeIn("up","spring",0.5 *index, 0.75)}>
+      <Tilt 
+        className="xs:w-[380px] w-full w-full bg-gradient-to-b from-[#01B3CC] to-indigo-700 via-50% p-[3px] rounded-[20px] shadow-card"
+        options={{
+          max:45,
+          scale:1,
+          speed:450
+        }}
+      >
+        <div className=" relative bg-tertiary rounded-2xl p-5 min-w-[360px] flex flex-wrap items-center flex-col">
+          <img src={project.image} className='w-full h-full object-cover rounded-2xl'/>
+
+          <div className="absolute top-0  flex jusifty-end m-3 card-img_hover">    
+            <div 
+              onClick={() => window.open(project.source_code_link,"_blank")}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mx-1'  
+            >
+              <img src={github} className='w-1/2 h-1/2 object-contain'/>
+            </div>
+            {/**For Live Site**/}
+            <div 
+              onClick={() => window.open(project.source_code_link,"_blank")}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer  mx-1'  
+            >
+              <img src={github} className='w-1/2 h-1/2 object-contain'/>
+            </div>
+          </div>        
+
+          <div className='mt-5'>
+            <h3 className='text-white font-bold text-[24px]'>{project.name}</h3>
+            <p className='mt-2 text-secondary text-[14px]'>{project.description}</p>
+          </div>        
+          
+          <div className='mt-5 flex flex-wrap gap-2'>
+            {project.tags.map((tag,index) => (
+              <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+                #{tag.name}
+              </p>
+            ))}
+          </div>
+        </div>
+      </Tilt>
+    </motion.div>
+  )
+}
 const Works = () => {
   return (
-    <div>Works</div>
+    <>
+      <motion.div>
+        <p className={styles.sectionSubText}>My Work</p>
+        <h2 className={styles.sectionHeadText}>Projects.</h2>
+      </motion.div>
+      <div className="w-full flex">
+        <motion.p
+          variants={fadeIn("","",0.1,1)}
+          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        >
+          The projects bellow are some of the projects I have worked on. Some of them are personal projects, while others are projects I have worked on with a team. I have experience working with a variety of technologies, including React, Node.js, Express, MongoDB, and more. I am always looking for new projects to work on, so if you have a project you would like to work on, feel free to reach out to me.
+
+        </motion.p>
+      </div>
+
+      <div className="mt-20 grid grid-cols-3 items-center gap-9">
+        {projects.map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} project={project} />
+        ))}
+      </div>
+    </>
   )
 }
 
-export default Works
+export default SectionWrapper(Works,"")
