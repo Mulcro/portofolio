@@ -24,7 +24,7 @@ const Sphere = ({imgUrl, objColor, func}) => {
         }}  
       >
         <sphereGeometry args={[1, 32, 32]}/>
-        <meshStandardMaterial color='black'/>
+        <meshStandardMaterial color='indigo'/>
         <Decal
           map={decal}
           scale={[1, 1, 1]}

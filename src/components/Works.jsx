@@ -11,14 +11,14 @@ const ProjectCard = ({project,index}) => {
   return (
     <motion.div variants={fadeIn("up","spring",0.5 *index, 0.75)}>
       <Tilt 
-        className="xs:w-[380px] w-full w-full bg-gradient-to-b from-[#01B3CC] to-indigo-700 via-50% p-[3px] rounded-[20px] shadow-card"
+        className="w-[340px] s:w-[380px] w-full w-full bg-gradient-to-b from-[#01B3CC] to-indigo-700 via-50% p-[3px] rounded-[20px] shadow-card"
         options={{
           max:45,
           scale:1,
           speed:450
         }}
       >
-        <div className=" relative bg-tertiary rounded-2xl p-5 min-w-[360px] flex flex-wrap items-center flex-col">
+        <div className=" relative bg-tertiary rounded-2xl p-5 min-w-[320px] s:min-w-[360px] flex flex-wrap items-center flex-col">
           <img src={project.image} className='w-full h-full object-cover rounded-2xl'/>
 
           <div className="absolute top-0  flex jusifty-end m-3 card-img_hover">    
@@ -64,7 +64,7 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("","",0.1,1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-secondary flex-wrap text-[17px] max-w-3xl leading-[30px]'
         >
           The projects bellow are some of the projects I have worked on. Some of them are personal projects, while others are projects I have worked on with a team. I have experience working with a variety of technologies, including React, Node.js, Express, MongoDB, and more. I am always looking for new projects to work on, so if you have a project you would like to work on, feel free to reach out to me.
 
