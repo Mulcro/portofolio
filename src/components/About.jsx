@@ -41,7 +41,11 @@ const About = () => {
         variants={fadeIn("","",0.1,1)}
         className="mt-4 text-secondary text-[17px] max-3xl leading-[30px]"
       >
-        Hey! I'm Mulero and this website is not only a showcase of my work and skills, but will also eventually be an extention of everything related to me! I have a passion for software engineering and with time I'll also showcase all my other hobies and interests here. Have fun scrolling :D
+        Hey! I'm Mulero and this website is not only a showcase of my work and skills, but will also eventually be an extention of everything related to me! I have a passion for software engineering and with time I'll also showcase all my other hobies and interests here. Anyways below are some of my main services and interests
+
+        <br />
+        <br/>
+        <span className="text-transparent hover:text-secondary">ps - I'm also a huge fan of the color indigo, so you'll see a lot of it here!</span>
 
       </motion.p>
 
