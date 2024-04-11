@@ -40,6 +40,7 @@ import heroku from "./tech/heroku.png";
 import instagram from "./tech/instagram.png";
 import merced from "./tech/merced.png";
 import snc from "./tech/snc.png"
+import webb from "./webb.png"
 
 export {
   snc,
@@ -56,6 +57,7 @@ export {
   docker,
   figma,
   git,
+  webb,
   html,
   javascript,
   mongodb,

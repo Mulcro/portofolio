@@ -10,7 +10,7 @@ const ServiceCard = ({index,title,icon}) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
-        variants={fadeIn("right","spring",0.5 *index, 0.75)}
+        variants={fadeIn("right",0.8 *index, 0.75)}
         className="w-full bg-gradient-to-b from-[#01B3CC] to-indigo-700 via-50% p-1 rounded-[20px] shadow-card"
         >
         <div 
@@ -21,7 +21,7 @@ const ServiceCard = ({index,title,icon}) => {
           }}
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          <img src={icon} className='w-16 h-16 object-contain'/>
+          <img src={icon} alt="icon" className='w-16 h-16 object-contain'/>
           <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
         </div>
       </motion.div>
@@ -41,7 +41,7 @@ const About = () => {
         variants={fadeIn("","",0.1,1)}
         className="mt-4 text-secondary text-[17px] max-3xl leading-[30px]"
       >
-        lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, nihil expedita perspiciatis repellat totam inventore voluptatum dicta veniam dignissimos, praesentium corporis tenetur doloribus? Repellendus asperiores, alias minima ipsa reiciendis voluptate?
+        Hey! I'm Mulero and this website is not only a showcase of my work and skills, but will also eventually be an extention of everything related to me! I have a passion for software engineering and with time I'll also showcase all my other hobies and interests here. Have fun scrolling :D
 
       </motion.p>
 

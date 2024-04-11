@@ -5,7 +5,7 @@ import CanvasLoader from '../Loader';
 
 
 
-const Computers = ({isMobile}) => {
+const Computers = () => {
  
   const computer = useGLTF('./desktop_pc/scene.gltf')
 
@@ -24,8 +24,8 @@ const Computers = ({isMobile}) => {
 
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.65 : 0.75}
-        position={isMobile ? [-1,-2.3,-2] : [0, -2.7, -1.7]}
+        scale={0.65}
+        position={ [0, -2.7, -1.7]}
         rotation={[-0.01,-0.2,-0.1]}
       />
     </mesh>
@@ -33,48 +33,6 @@ const Computers = ({isMobile}) => {
 }
 
 const ComputerCanvas = () => {
-    const [isMobile, setIsMobile] = useState();
-    useEffect(() => {
-      const mediaQuery = window;
-      
-      const handleResize = () => {
-        const mediaWidthTrigger = mediaQuery.innerWidth;
-        if((mediaWidthTrigger <= 700) && (mediaWidthTrigger > 600) ){
-          console.log("hit1");
-          setIsMobile(true);
-        }
-        else{
-          console.log("hit2");
-          setIsMobile(false);
-        }
-        // console.log(isMobile);
-      }
-
-      mediaQuery.addEventListener('resize', handleResize);
-
-      return () => {  
-        mediaQuery.removeEventListener('resize', handleResize);
-      }
-    }, []);
-
-    // useEffect(() => {
-    //   console.log(window.matchMedia('(max-width: 1200px)').matches);
-    //   const mediaQuery = window.matchMedia('(max-width: 1200px)');
-    //   setIsMobile(mediaQuery.matches);
-
-    //   const handleResize = (e) => {
-    //     console.log(isMobile);
-    //     setIsMobile(e.matches);  
-    //   };
-
-    //   mediaQuery.addEventListener('resize', handleResize);
-    //   mediaQuery.addEventListener('resize', () => console.log('resize'));
-
-    //   return () => {
-    //     mediaQuery.removeEventListener('resize', handleResize);
-    //   }
-    // }, []);
-
     return (
       <Canvas
         frameloop='demand'
@@ -88,7 +46,7 @@ const ComputerCanvas = () => {
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 2}
           />
-          <Computers isMobile={isMobile}/>
+          <Computers />
         </Suspense>
 
         <Preload all/>
