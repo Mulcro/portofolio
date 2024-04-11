@@ -25,7 +25,7 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get In Touch</p>
         <h2 className={styles.sectionHeadText}>Contact Me.</h2>
 
-        <div className='grid grid-cols-2 ml-[-4rem] mt-10'>
+        <div className='grid grid-cols-2 ml-[-8rem] mt-10'>
           {contacts.map((contact,index) => (
             <div className="w-40 h-28 hover:cursor-pointer mx-20 flex flex-col justify-center items-center">
               <p className={`[${contact.color}]-text-gradient tracking-wide font-bold`}>{contact.title}</p>
