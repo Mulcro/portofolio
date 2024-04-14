@@ -67,7 +67,7 @@ const Works = () => {
       </motion.div>
       <div className="w-full flex">
         <motion.p
-          variants={slideIn("right","", 0.85, 1)}
+          variants={fadeIn("","", 0.85, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           The projects bellow are some of the projects I have worked on. Some of them are personal projects, while others are projects I have worked on with a team. I have experience working with a variety of technologies, including React, Node.js, Express, MongoDB, and more. I am always looking for new projects to work on, so if you have a project you would like to work on, feel free to reach out to me.
