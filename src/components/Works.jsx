@@ -9,7 +9,9 @@ import Tilt from 'react-parallax-tilt'
 
 const ProjectCard = ({project,index}) => {
   return (
-    <motion.div>
+    <motion.div
+      variants={fadeIn("left","",index*0.8,1)}
+    >
       <Tilt 
         className="w-[340px] bg-gradient-to-b from-[#01B3CC] to-indigo-700 via-50% p-[3px] rounded-[20px] shadow-card"
         options={{
@@ -58,12 +60,14 @@ const Works = () => {
   return (
     <>
       <motion.div
+        variants={fadeIn("","", 0.75, 0.8)}
       >
         <p className={styles.sectionSubText}>My Work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
       <div className="w-full flex">
         <motion.p
+          variants={slideIn("right","", 0.85, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           The projects bellow are some of the projects I have worked on. Some of them are personal projects, while others are projects I have worked on with a team. I have experience working with a variety of technologies, including React, Node.js, Express, MongoDB, and more. I am always looking for new projects to work on, so if you have a project you would like to work on, feel free to reach out to me.
