@@ -229,7 +229,7 @@ const projects = [
       },
     ],
     image: locafarm,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://mighty-beach-62885-129eb7fa49c2.herokuapp.com/",
   },
   {
     name: "Science Fair",
@@ -329,7 +329,7 @@ const projects = [
       },
     ],
     image: bear,
-    source_code_link: "",
+    source_code_link: "https://mulcro.github.io/Ucm_waterhack/",
   }
 ];
 
