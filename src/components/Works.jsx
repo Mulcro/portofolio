@@ -10,7 +10,7 @@ import Tilt from 'react-parallax-tilt'
 const ProjectCard = ({project,index}) => {
   return (
     <motion.div
-      variants={fadeIn("left","",index*0.8,1)}
+      variants={fadeIn("right","",index*0.8,1)}
     >
       <Tilt 
         className="w-[340px] bg-gradient-to-b from-[#01B3CC] to-indigo-700 via-50% p-[3px] rounded-[20px] shadow-card"
@@ -60,7 +60,7 @@ const Works = () => {
   return (
     <>
       <motion.div
-        variants={fadeIn("","", 0.75, 0.8)}
+        variants={textVariant()}
       >
         <p className={styles.sectionSubText}>My Work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
