@@ -114,6 +114,18 @@ const technologies = [
   {
     name:"Python",
     icon: python
+  },
+  {
+    name:"Docker",
+    icon: docker
+  },
+  {
+    name: "Redux",
+    icon: redux
+  },
+  {
+    name: "Figma",
+    icon: figma
   }
 
 ];
