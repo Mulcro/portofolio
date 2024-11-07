@@ -13,7 +13,7 @@ const Hero = () => {
               <div className="w-1 sm:h-80 h-60 bg-gradient-to-b from-[#01B3CC] from-20% via-indigo-500 via-50%"/>
           </div>
           <div>
-            <h1 className={`${styles.heroHeadText} text-whtie`}>Hi, I'm <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#01B3CC] from-20% to-indigo-500 via-50%"'>Mulero</span></h1>
+            <h1 className={`${styles.heroHeadText} text-whtie`}>Hi, I'm <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#01B3CC] from-20% to-indigo-500 via-50%"'>Mulero Alamou</span></h1>
             <p className={`${styles.heroSubText}`}>
               I'm a fullstack developer that loves to <br className="sm:block hidden"/> build things for the web!
             </p>
