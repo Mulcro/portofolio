@@ -20,7 +20,7 @@ const Navbar = () => {
                         window.scrollTo(0,0);
                     }}
                 >
-                    <img src={logo} alt="" className="w-9 h-9 object-contain"/>
+                    <img src={logo} alt="website logo" className="w-9 h-9 object-contain"/>
                     <p className='text-white text-[18px] font-bold cursor-pointer flex'>Mulero &nbsp;<span className='sm:block hidden '>| Alamou</span></p>
                 
                 </Link>
@@ -39,10 +39,10 @@ const Navbar = () => {
                 <div
                     className={`sm:hidden flex flex-1 justify-end items-center gap-2 cursor-pointer`}
                 >
-                    <img src={menu} className={`${toggle ? "hidden" : ""} w-[20px] h-[20px] object-contain cursor-pointer`}
+                    <img alt="open menu icon" src={menu} className={`${toggle ? "hidden" : ""} w-[20px] h-[20px] object-contain cursor-pointer`}
                         onClick={() => {setToggle(!toggle);}}
                     />
-                    <img src={close} className={`${!toggle ? "hidden" : ""} w-[20px] h-[20px] object-contain cursor-pointer`}
+                    <img alt="close menu icon" src={close} className={`${!toggle ? "hidden" : ""} w-[20px] h-[20px] object-contain cursor-pointer`}
                         onClick={() => {setToggle(!toggle);}}
                     />
                     <div className={`${!toggle ? "hidden" : "flex"} p-6 bg-gradient-to-r from-black via-black  absolute top-[4rem] right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl `}>
