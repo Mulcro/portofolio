@@ -45,7 +45,7 @@ const Navbar = () => {
                     <img alt="close menu icon" src={close} className={`${!toggle ? "hidden" : ""} w-[20px] h-[20px] object-contain cursor-pointer`}
                         onClick={() => {setToggle(!toggle);}}
                     />
-                    <div className={`${!toggle ? "hidden" : "flex"} p-6 bg-gradient-to-r from-black via-black  absolute top-[4rem] right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl `}>
+                    <div className={`${!toggle ? "hidden" : "flex"} p-6 bg-black  absolute top-[4rem] right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl `}>
                         <ul className='list-none flex justify-end flex-col gap-4'>
                         {navLinks.map(link => (
                             <li key={link.id} 
