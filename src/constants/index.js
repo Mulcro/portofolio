@@ -120,7 +120,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Sales Associate",
+    title: "IT Operations Specialist",
     company_name: "Spheres Numerique et Commerciales",
     icon: snc,
     iconBg: "#E6DEDD",
