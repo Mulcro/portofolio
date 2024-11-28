@@ -1,4 +1,4 @@
-import React,{useRef,useEffect} from 'react';
+import React from 'react';
 import {motion} from 'framer-motion';
 import {styles} from '../style';
 import { ComputersCanvas } from './canvas';

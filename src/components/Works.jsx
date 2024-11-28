@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 import {styles} from '../style'
 import SectionWrapper from './hoc/SectionWrapper'
 import {webb} from '../assets'
-import {fadeIn, slideIn, textVariant} from '../utils/motion'
+import {fadeIn, textVariant} from '../utils/motion'
 import {projects} from '../constants'
 import Tilt from 'react-parallax-tilt'
 
@@ -24,13 +24,6 @@ const ProjectCard = ({project,index}) => {
           <img src={project.image} alt={project.name} className='w-full h-full object-cover rounded-2xl'/>
 
           <div className="absolute top-0  flex jusifty-end m-3 card-img_hover">    
-            {/* <div 
-              onClick={() => window.open(project.source_code_link,"_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mx-1'  
-            >
-              <img src={github} alt="link to github reop" className='w-1/2 h-1/2 object-contain'/>
-            </div> */}
-            {/**For Live Site**/}
             <div 
               onClick={() => window.open(project.source_code_link,"_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer  mx-1'  

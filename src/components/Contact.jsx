@@ -1,16 +1,12 @@
-import React,{useState,useRef} from 'react'
+import React,{useRef} from 'react'
 import {motion} from 'framer-motion'
-import emailjs from '@emailjs/browser';
 
 import {styles} from '../style'
 import {EarthCanvas} from './canvas'
 import SectionWrapper from './hoc/SectionWrapper';
-import {slideIn} from '../utils/motion'
 import {contacts} from '../constants'
-import {SphereCanvas} from './canvas'
 
 const Contact = () => {
-  const formRef = useRef();
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
