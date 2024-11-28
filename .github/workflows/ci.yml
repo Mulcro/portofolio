@@ -11,14 +11,26 @@ on:
         
 jobs:
     deploy:
-
-        # Specifies the os to run the jobs on
+        # Specifies the OS to run the jobs on
         runs-on: ubuntu-22.04
         steps:
-            # Specifies the github actions to use
-
-            # This is the default github action
+            # Check out the repository
             - uses: actions/checkout@v2
+
+            # Set up Node.js
+            - name: Set up Node.js
+              uses: actions/setup-node@v3
+              with:
+                node-version: '16'
+
+            # Install dependencies
+            - name: Install dependencies
+              run: npm install
+
+            # Build the project
+            - name: Build project
+              run: npm run build
+              
             # This is the action to use to deploy to heroku
             - uses: akhileshns/heroku-deploy@v3.13.15
               with:
