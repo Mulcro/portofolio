@@ -29,6 +29,7 @@ import tesla from "./company/tesla.png";
 import leaf from "./leaf.png";
 import lib from "./lib.png";
 import locafarm from "./locafarm.png";
+import sstcapp from "./sstcapp.png"
 import science from "./science.png";
 import bear from "./bear.png";
 
@@ -59,6 +60,7 @@ export {
   git,
   webb,
   html,
+  sstcapp,
   javascript,
   mongodb,
   nodejs,

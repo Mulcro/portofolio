@@ -24,7 +24,8 @@ import {
   python,
   heroku,
   merced,
-  snc
+  snc,
+  sstcapp
 } from "../assets";
 
 export const navLinks = [
@@ -186,9 +187,49 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Merced College Tutoring Session Manager",
+    description: "This session management app was designed specifically for Merced College to improve efficiency and accuracy in tracking tutoring sessions. It was designed to replace manual processes with real-time updates, automated queues, and session timing, reducing staff workload significantly.",
+    tags:[
+      {
+        name: "React JS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Express JS",
+        color: "text-red",
+      },
+      {
+        name: "Docker",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "Jest",
+        color: "red-text-gradient",
+      },
+      {
+        name: "Redis",
+        color: "brown-text-gradient",
+      },
+      {
+        name: "Heroku",
+        color: "brown-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: sstcapp,
+    source_code_link: "https://sstc-front-a468dc2fcd25.herokuapp.com/"
+  },
+  {
     name: "Locafarm",
     description:
-      "Inspired by reshaping the agriculture-consumer relationship, LocaFarm aims to bridge the gap between local farmers and health-conscious consumers, fostering a community-driven marketplace. LocaFarm utilizes extensive datasets and machine learning primarily to improve farmers' yields, predicting optimal crops based on a random forrest tree classification model that's dependent on environmental factors, thereby empowering farmers and enhancing agricultural productivity.",
+      "LocaFarm aims to bridge the gap between local farmers and health-conscious consumers, fostering a community-driven marketplace.",
     tags: [
       {
         name: "React JS",
@@ -223,9 +264,9 @@ const projects = [
     source_code_link: "https://mighty-beach-62885-129eb7fa49c2.herokuapp.com/",
   },
   {
-    name: "Science Fair",
+    name: "2023 Merced College Science Fair",
     description:
-      "The 2023 Merced College Science Fair website is designed and implemented using ReactJS, showcasing the various projects and participants of the science fair. The website also features an admin panel for managing projects, participants, and judges, enabling the organizers to efficiently manage the event.",
+      "The 2023 Merced College Science Fair website is designed and implemented to promote and showcase the various prizes and details of the 2023 Merced College Science Fair.",
     tags: [
       {
         name: "React JS",
@@ -242,7 +283,7 @@ const projects = [
   {
     name: "LeafBuster AI",
     description:
-      "Leaf Buster AI utilizes TheosAPI to train an image recognition model for identifying apple leaf rot and blot using a Kaggle dataset. Additionally, Leaf Buster AI designs and implements a ReactJS frontend enabling users to upload apple leaf images, which are processed by Theos API, and presents the results in a user-friendly format.",
+      "Leaf Buster was made for HackMerced XIII utilizing TheosAPI to train an image recognition model for identifying apple leaf rot and blot using a Kaggle dataset. Additionally, Leaf Buster AI designs and implements a ReactJS frontend enabling users to upload apple leaf images, which are processed by Theos API, and presents the results in a user-friendly format.",
     tags: [
       {
         name: "React JS",
@@ -263,7 +304,7 @@ const projects = [
   {
     name: "LibKnekt",
     description:
-      "Libknekt designs and implements a relational model for a MongoDB database using Mongoose in an ExpressJS backend, enabling CRUD operations on books, authors, categories, and users. Additionally, Libknekt builds an ExpressJS API with custom user authentication, facilitating a privilege-based experience on the ReactJS frontend, where users can search, borrow books, and browse by title, author, and category.",
+      "Libknekt originated as an Idea for my former highscools library database management. Everything was done manually but this app implements relational models and API development to enable CRUD operations on books, authors, categories, and users. Additionally, custom user authentication was implemented, facilitating a privilege-based experience where privileged users can search, borrow books, and browse by title, author, and category.",
     tags: [
       {
         name: "React JS",
